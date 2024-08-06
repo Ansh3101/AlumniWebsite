@@ -21,10 +21,10 @@ function HomePage() {
   return (
     <>
       <LandingPage />
-      {/* <ContentsPage />
+      <ContentsPage />
       <DatabasePage />
       <EventsPage />
-      <NetworkPage /> */}
+      <NetworkPage />
     </>
   );
 }
