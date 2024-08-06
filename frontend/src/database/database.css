@@ -1,0 +1,62 @@
+.database {
+  width: 100%;
+  height: 70vh;
+  background-color: #eee;
+  display: flex;
+}
+
+.databaseHeading {
+  width: 40%;
+  border: 2px solid #000;
+  border-right: 0px;
+  border-top: 10px solid #000;
+}
+
+.connected {
+  height: 69.6vh;
+  border: 2px solid #000;
+}
+
+.databaseHeader {
+  font-family: "Benzin-Medium";
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.databaseSub {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-family: "EuclidCircular-Bold";
+  font-size: 3.5vw;
+}
+
+.databaseCaption {
+  margin-top: -4%;
+  font-family: "EB Garamond";
+  font-size: 1.3vw;
+  margin-left: 5%;
+  margin-bottom: 12%;
+}
+
+.joinNetwork {
+  font-family: "EuclidCircular-Medium";
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 0.9vw;
+  margin-left: 5%;
+  transition: 1s;
+}
+
+.joinNetwork:hover {
+  background-color: #eee;
+  color: #000;
+  border: 1px solid #000;
+}

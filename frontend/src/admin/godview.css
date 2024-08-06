@@ -1,0 +1,50 @@
+.modal {
+  width: 80%;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 10px;
+  height: 70vh;
+  margin-left: 10%;
+  margin-top: -55%;
+  z-index: 1000;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.modal-2 {
+  width: 80%;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 10px;
+  height: 70vh;
+  margin-left: 10%;
+  margin-top: -35%;
+  z-index: 1000;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.modal-content h2 {
+  font-family: "EuclidCircular-Medium";
+  font-size: 2vw;
+  margin-bottom: 8%;
+}
+
+.modal-content h4 {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4vw;
+}
+
+.verifyButton {
+  padding: 1.2rem 4rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "EuclidCircular-Medium", sans-serif;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

@@ -1,0 +1,204 @@
+.connectBar {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  width: 85%;
+}
+
+.connect {
+  width: 100%;
+}
+
+.profileLink {
+  font-family: "EuclidCircular-Medium";
+  color: #000000;
+  font-size: 0.9vw;
+  border: none;
+}
+
+.notVerifiedHeader {
+  text-align: center;
+  font-family: "EuclidCircular-Bold";
+}
+
+.notVerifiedConnect {
+  align-items: center;
+  justify-content: center;
+}
+
+.notVerifiedConnect h2 {
+  margin-top: 15%;
+  font-family: "EuclidCircular-Bold";
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.notVerifiedConnect p {
+  text-align: center;
+  font-family: "EuclidCircular-Medium";
+  /* font-family: "EB Garamond"; */
+}
+
+.connectDetails {
+  font-family: "EuclidCircular-Medium";
+  width: 100%;
+  margin-top: 3%;
+}
+
+.connectHeader {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connecth1 {
+  margin-left: 5%;
+  font-size: 1.2vw;
+  font-family: "Benzin-Medium";
+  text-transform: uppercase;
+}
+
+.connectOne {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.img {
+  display: flex;
+  height: 25vh;
+  width: 90%;
+  border-radius: 5%;
+  border-end-end-radius: 0%;
+  border-end-start-radius: 0%;
+  border: 1px solid #000;
+  background-color: lightblue;
+  border-bottom: 10px solid #000;
+}
+
+.img2 {
+  display: flex;
+  height: 25vh;
+  width: 90%;
+  border-radius: 5%;
+  border-end-end-radius: 0%;
+  border-end-start-radius: 0%;
+  background-color: coral;
+  border: 1px solid #000;
+  border-bottom: 10px solid #000;
+}
+
+.title,
+.description {
+  width: 90%;
+  color: #000000;
+}
+
+.title {
+  font-size: 1.4vw;
+}
+
+.description {
+  font-family: "EB Garamond";
+  font-size: 1vw;
+  font-style: italic;
+  margin-top: -4%;
+}
+
+.one,
+.two {
+  text-decoration: none;
+  border: none;
+  font-family: "EuclidCircular-Medium";
+}
+
+.one:hover,
+.two:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -52px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: "" !important;
+}
+
+.next-slick-arrow,
+.prev-slick-arrow {
+  color: #000000;
+  font-size: 20px;
+}
+
+.connectDetails2 {
+  font-family: "EuclidCircular-Medium";
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.top {
+  margin-top: -2%;
+}
+
+/* Add this to frontend/src/connect/connect.css */
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
+.filterLabel {
+  font-family: "EuclidCircular-Medium", sans-serif;
+  font-size: 1.2vw;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.filterInput,
+.filterSelect {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "EuclidCircular-Medium", sans-serif;
+  font-size: 1vw;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "EuclidCircular-Medium", sans-serif;
+  font-size: 1.3vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.filterResetButton {
+  padding: 10px 10px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: "EuclidCircular-Medium", sans-serif;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.filterButton:hover {
+  background-color: #555;
+}

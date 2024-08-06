@@ -1,0 +1,118 @@
+.classContents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.classItem {
+  width: calc(50% - 4%); /* Two items per row with space between */
+  margin-bottom: 2%;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #000; /* Border color */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.classImageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.classImage {
+  width: 100%;
+  height: 30rem; /* Fixed height */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+  border-bottom: 12px solid #000; /* Border color */
+}
+
+.classImageContainer:hover .classImage {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+.classTitle {
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 2rem; /* Change font size to rem for consistency */
+  text-transform: uppercase;
+  margin-top: 2.5rem; /* Adjust margin for spacing */
+  color: #333; /* Darken title color for better readability */
+}
+
+.classesHeader {
+  text-align: center;
+  font-family: "EuclidCircular-Bold", sans-serif;
+  font-size: 3rem; /* Increase font size for header */
+  margin: 3rem 0; /* Adjust margin for spacing */
+}
+
+.classCaption {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.3rem; /* Change font size to rem for consistency */
+  color: #777; /* Adjust caption color for better contrast */
+  margin-top: 0rem; /* Adjust margin for spacing */
+}
+
+.classItem:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover for depth */
+}
+
+.classItem:hover .classTitle,
+.classItem:hover .classCaption {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .classItem {
+    width: calc(100% - 4%); /* Each item takes full width with margin */
+    margin-bottom: 5%; /* More space between items */
+  }
+
+  .classesHeader {
+    font-size: 2rem; /* Reduce font size for header */
+    margin: 1rem 0; /* Reduce spacing between header and navbar */
+  }
+
+  .classTitle {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .classCaption {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .classImage {
+    height: 20rem; /* Adjust image height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .classItem {
+    width: calc(100% - 10%); /* Full width for smaller screens */
+  }
+
+  .classesHeader {
+    font-size: 1.8rem; /* Further reduce font size for header */
+    margin: 0.5rem 0; /* Further reduce spacing between header and navbar */
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+
+  .classTitle {
+    font-size: 1.2rem; /* Further adjust font size for mobile */
+  }
+
+  .classCaption {
+    font-size: 0.9rem;
+    padding-bottom: 1rem; /* Further adjust font size for mobile */
+  }
+
+  .classImage {
+    height: 18rem; /* Further adjust image height for mobile */
+  }
+}

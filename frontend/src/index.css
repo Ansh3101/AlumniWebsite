@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Benzin-Medium";
+  src: local("Benzin-Medium"), url("./fonts/Benzin-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: local("NeueMontreal"), url("./fonts/NeueMontreal.otf") format("otf");
+}
+
+@font-face {
+  font-family: "EuclidCircular-Bold";
+  src: local("EuclidCircular-Bold"),
+    url("./fonts/EuclidCircular-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "EuclidCircular-Medium";
+  src: local("EuclidCircular-Medium"),
+    url("./fonts/EuclidCircular-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LemonMilk-Regular";
+  src: local("LemonMilk-Regular"),
+    url("./fonts/LemonMilk-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: local("NeueMontreal"), url("./fonts/NeueMontreal.otf") format("otf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "EuclidCircular-Medium", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

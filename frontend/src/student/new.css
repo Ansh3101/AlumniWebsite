@@ -1,0 +1,289 @@
+.newStudent {
+  width: 100%;
+  height: 1000vh;
+  background-color: #eee;
+}
+
+.signup {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
+  border: 1px solid #000;
+  background-color: #eee;
+  box-shadow: 10px 10px 0px #000;
+}
+
+.signupHeader {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  margin-top: 5%;
+  font-family: "Benzin-Medium";
+}
+
+.signupSub {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 5%;
+  font-family: "EuclidCircular-Bold";
+}
+
+.signupForm {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-bottom: 5%;
+  margin-top: 7%;
+  font-family: "EB Garamond";
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.packet p {
+  font-weight: 800;
+  font-size: 1.2vw;
+  margin-top: 7.5%;
+  font-family: "EuclidCircular-Medium";
+}
+
+.firstName {
+  padding-left: 4%;
+  width: 20vw;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  font-family: "EB Garamond";
+  font-size: 1vw;
+  color: #000000;
+  font-weight: 600;
+  /* border: none; */
+  border-radius: 5px;
+  border: 1px solid #00000024;
+}
+
+.lastName {
+  padding-left: 4%;
+  width: 20vw;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  font-family: "EB Garamond";
+  font-size: 1vw;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #00000024;
+}
+
+.email {
+  padding-left: 2%;
+  width: 45vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "EB Garamond";
+  font-size: 1vw;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #00000024;
+}
+
+.dropdown {
+  color: #000000;
+}
+
+.student {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.studentHeader {
+  font-family: "EuclidCircular-Medium";
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 4%;
+}
+
+.details {
+  font-family: "EuclidCircular-Medium";
+  font-size: 1vw;
+  margin-top: 10%;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: -4%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loginButton {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  border: 1px solid #000;
+  color: #000000;
+  text-decoration: none;
+  background-color: #eee;
+  font-family: "EuclidCircular-Medium";
+  text-align: center;
+  transition: 1s;
+}
+
+.signupButton {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: "EuclidCircular-Medium";
+  text-align: center;
+  transition: 1s;
+}
+
+.loginButton:hover {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.signupButton:hover {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  border: 1px solid #000;
+  background-color: #eee;
+  color: #000;
+  text-decoration: underline;
+}
+
+.studentImage {
+  width: 150%;
+  margin-left: -25%;
+  height: 65vh;
+  background-size: cover;
+  background-color: lightblue;
+}
+
+.submit {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 15%;
+  padding-right: 15%;
+  border: 1px solid #000;
+  margin-left: 30%;
+  margin-top: 5%;
+  background-color: #000;
+  font-family: "EuclidCircular-Medium";
+  font-size: 0.9vw;
+  color: #fff;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1vw;
+  margin-top: 5%;
+}
+
+.notVerified {
+  margin-top: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.notVerified h2 {
+  font-family: "EuclidCircular-Bold";
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.notVerified p {
+  text-align: center;
+  font-family: "EuclidCircular-Medium";
+  /* font-family: "EB Garamond"; */
+}
+
+.verify {
+  margin-top: 10%;
+  margin-left: 24%;
+  cursor: pointer;
+}
+
+.logoutButton {
+  margin-top: 5%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.studentProfile {
+  width: 150%;
+  height: 65vh;
+  margin-left: -25%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.coverPhoto {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../../public/background.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+
+.profilePhoto {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  bottom: -100px;
+  left: 20px;
+  border: 5px solid #fff;
+}
+
+.profileDetails {
+  margin-left: 25%;
+  margin-top: 2%;
+}
+
+.profileDetails h1 {
+  font-size: 2.5vw;
+  font-family: "EuclidCircular-Medium";
+  margin-bottom: 5%;
+}
+
+.profileDetails p {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-size: 1vw;
+}
+
+.editButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 2% 20%;
+  cursor: pointer;
+  font-family: "EuclidCircular-Medium";
+  margin-top: 8%;
+  font-size: 0.8vw;
+  transition: background-color 0.3s;
+}

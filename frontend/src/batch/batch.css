@@ -1,0 +1,39 @@
+.batchContents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.batchImage {
+  width: 70%;
+  height: 55vh;
+  object-fit: cover; /* Ensures the image covers the area */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+  border: 2px solid #000;
+  border-top: 15px solid #000;
+  border-bottom: 15px solid #000;
+}
+
+.batchItem:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover for depth */
+}
+
+.batchHeader {
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 2.5rem; /* Change font size to rem for consistency */
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2.5rem; /* Adjust margin for spacing */
+  color: #333; /* Darken title color for better readability */
+}
+
+.batchCaption {
+  font-size: 1.3rem; /* Change font size to rem for consistency */
+  color: #777; /* Adjust caption color for better contrast */
+  margin-top: 0rem; /* Adjust margin for spacing */
+}
+
+.batchItem:hover .batchHeader,
+.batchItem:hover .batchCaption {
+  text-decoration: underline; /* Add underline on hover */
+}
