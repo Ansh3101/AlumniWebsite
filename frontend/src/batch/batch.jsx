@@ -58,7 +58,7 @@ function BatchPage() {
       console.log();
       console.log(Number(batch["id"].replace(/[a-zA-Z]/g, "")));
       const response = await axios.post(
-        "http://localhost:8000/api/alumni/get/all",
+        `${process.env.REACT_APP_BACKEND}/alumni/get/all`,
         {
           accessKey: process.env.REACT_APP_ACCESS_KEY,
           batch: Number(batch["id"].replace(/[a-zA-Z]/g, "")),

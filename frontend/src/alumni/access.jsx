@@ -24,7 +24,7 @@ function AccessAlumni() {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/alumni/access",
+        `${process.env.REACT_APP_BACKEND}/alumni/access`,
         data
       );
       console.log(response);

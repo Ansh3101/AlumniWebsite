@@ -36,7 +36,7 @@ function NewAlumni() {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/alumni/new",
+        `${process.env.REACT_APP_BACKEND}/alumni/new`,
         data
       );
       console.log(response);

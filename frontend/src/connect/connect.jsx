@@ -37,7 +37,7 @@ function ConnectPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/alumni/get/all",
+        `${process.env.REACT_APP_BACKEND}/alumni/get/all`,
         body
       );
       setAlumniData(response.data.data);
@@ -51,7 +51,7 @@ function ConnectPage() {
     console.log("Fetching student data");
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/students/get/all",
+        `${process.env.REACT_APP_BACKEND}/students/get/all`,
         { accessKey: process.env.REACT_APP_ACCESS_KEY }
       );
       setStudentData(response.data.data);

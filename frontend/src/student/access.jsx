@@ -24,7 +24,7 @@ function AccessStudent() {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/students/access",
+        `${process.env.REACT_APP_BACKEND}/students/access`,
         data
       );
       console.log(response);

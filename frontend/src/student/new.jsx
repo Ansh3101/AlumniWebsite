@@ -37,7 +37,7 @@ function NewStudent() {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/students/new",
+        `${process.env.REACT_APP_BACKEND}/students/new`,
         data
       );
       console.log(response);

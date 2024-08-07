@@ -31,7 +31,7 @@ const GodViewPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/alumni/get/all",
+        `${process.env.REACT_APP_BACKEND}/alumni/get/all`,
         body
       );
       setAlumniData(response.data.data);
@@ -45,7 +45,7 @@ const GodViewPage = () => {
     console.log("Fetching student data");
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/students/get/all",
+        `${process.env.REACT_APP_BACKEND}/students/get/all`,
         body
       );
       setStudentData(response.data.data);
@@ -125,7 +125,7 @@ const GodViewPage = () => {
     try {
       if (item.university) {
         const response = await axios.post(
-          "http://localhost:8000/api/alumni/verification",
+          `${process.env.REACT_APP_BACKEND}/alumni/verification`,
           {
             accessKey: process.env.REACT_APP_ACCESS_KEY,
             adminKey: process.env.REACT_APP_ADMIN_KEY,
@@ -137,7 +137,7 @@ const GodViewPage = () => {
         await window.location.reload();
       } else {
         const response = await axios.post(
-          "http://localhost:8000/api/students/verification",
+          `${process.env.REACT_APP_BACKEND}/students/verification`,
           {
             accessKey: process.env.REACT_APP_ACCESS_KEY,
             adminKey: process.env.REACT_APP_ADMIN_KEY,
