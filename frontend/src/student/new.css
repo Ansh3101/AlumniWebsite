@@ -57,7 +57,6 @@
   font-size: 1vw;
   color: #000000;
   font-weight: 600;
-  /* border: none; */
   border-radius: 5px;
   border: 1px solid #00000024;
 }
@@ -212,7 +211,6 @@
 .notVerified p {
   text-align: center;
   font-family: "EuclidCircular-Medium";
-  /* font-family: "EB Garamond"; */
 }
 
 .verify {
@@ -286,4 +284,113 @@
   margin-top: 8%;
   font-size: 0.8vw;
   transition: background-color 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .student {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .studentHeader {
+    font-size: 4vw;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginButton,
+  .signupButton {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 4vw;
+    padding: 10px;
+  }
+
+  .studentImage,
+  .studentProfile {
+    width: 100%;
+    margin-left: -6%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .coverPhoto {
+    height: 15rem;
+  }
+
+  .profilePhoto {
+    width: 10rem;
+    height: 10rem;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .profileDetails {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profileDetails h1 {
+    font-size: 5vw;
+  }
+
+  .profileDetails p {
+    font-size: 3vw;
+  }
+
+  .notVerified h2,
+  .notVerified p {
+    font-size: 4vw;
+  }
+
+  .verify,
+  .logoutButton {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 4vw;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .studentHeader {
+    font-size: 6vw;
+  }
+
+  .loginButton,
+  .signupButton {
+    font-size: 6vw;
+  }
+
+  .profilePhoto {
+    width: 8rem;
+    height: 8rem;
+    bottom: -40px;
+  }
+
+  .profileDetails h1 {
+    font-size: 7vw;
+  }
+
+  .profileDetails p {
+    font-size: 4vw;
+  }
+
+  .notVerified h2,
+  .notVerified p {
+    font-size: 5vw;
+  }
+
+  .verify,
+  .logoutButton {
+    font-size: 5vw;
+    text-align: center;
+    margin-left: 10%;
+  }
 }
