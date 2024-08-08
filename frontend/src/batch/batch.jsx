@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const settings = {
-  slidesToShow: 2,
+  slidesToShow: 4,
   nextArrow: (
     <div>
       <div className="next-slick-arrow"> ⫸ </div>
@@ -86,18 +86,18 @@ function BatchPage() {
       </div>
       <div className="registeredAlumni">
         <h2>Registered Alumni</h2>
-        <Slider {...settings} className="connectOne">
+        <Slider {...settings} className="connectTwo">
           {alumniData.map((item) =>
             item.batch === Number(batch["id"].replace(/[a-zA-Z]/g, "")) ? (
               <a key={item.id} href={item.id} className="one">
-                <div className="img"></div>
-                <h2 className="title">
+                <div className="imgooo"></div>
+                <h3 className="titleooo">
                   {item.firstName} {item.lastName}
-                </h2>
-                <p className="description top">
+                </h3>
+                <p className="descriptionooo top">
                   {item.university}, {item.country}
                 </p>
-                <p className="description">{item.batch}</p>
+                <p className="descriptionooo">{item.batch}</p>
               </a>
             ) : null
           )}

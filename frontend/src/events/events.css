@@ -64,3 +64,11 @@
   color: #000;
   border: 2px solid #000;
 }
+
+@media (max-width: 768px) {
+  .events {
+    display: none;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    height: auto; /* Adjust height for mobile */
+  }
+}

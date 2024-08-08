@@ -60,3 +60,45 @@
   color: #000;
   border: 1px solid #000;
 }
+
+@media (max-width: 768px) {
+  .database {
+    display: none;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .databaseHeading {
+    width: 100%; /* Full width on mobile */
+    border-right: 2px solid #000; /* Adjust border to be consistent */
+    border-bottom: 10px solid #000; /* Move the top border to bottom */
+    padding: 2rem 1rem; /* Add padding for better spacing */
+  }
+
+  .connected {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height for mobile */
+    border: none; /* Remove border for cleaner look */
+  }
+
+  .databaseHeader {
+    font-size: 5vw; /* Adjust font size for mobile */
+    margin-top: 2rem; /* Adjust margin for better spacing */
+  }
+
+  .databaseSub {
+    font-size: 7vw; /* Adjust font size for mobile */
+    margin-top: 1rem; /* Adjust margin for better spacing */
+  }
+
+  .databaseCaption {
+    font-size: 4vw; /* Adjust font size for mobile */
+    margin-top: 1rem; /* Adjust margin for better spacing */
+  }
+
+  .joinNetwork {
+    font-size: 4vw; /* Adjust font size for mobile */
+    padding: 1rem 2rem; /* Adjust padding for better spacing */
+    margin-top: 2rem; /* Adjust margin for better spacing */
+  }
+}

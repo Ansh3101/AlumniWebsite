@@ -37,3 +37,43 @@
 .batchItem:hover .batchCaption {
   text-decoration: underline; /* Add underline on hover */
 }
+
+.registeredAlumni h2 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.connectTwo {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.imgooo {
+  display: flex;
+  height: 25vh;
+  width: 90%;
+  border-radius: 5%;
+  border-end-end-radius: 0%;
+  border-end-start-radius: 0%;
+  border: 1px solid #000;
+  background-color: lightblue;
+  border-bottom: 10px solid #000;
+}
+
+.titleooo,
+.descriptionooo {
+  width: 90%;
+  color: #000000;
+  text-align: left;
+}
+
+.titleooo {
+  font-size: 1.4vw;
+}
+
+.descriptionooo {
+  font-family: "EB Garamond";
+  font-size: 1vw;
+  font-style: italic;
+  margin-top: -2%;
+}

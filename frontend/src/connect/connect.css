@@ -38,7 +38,6 @@
 .notVerifiedConnect p {
   text-align: center;
   font-family: "EuclidCircular-Medium";
-  /* font-family: "EB Garamond"; */
 }
 
 .connectDetails {
@@ -201,4 +200,79 @@
 
 .filterButton:hover {
   background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .connect {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .profileLink {
+    font-size: 3.5vw; /* Increase font size for mobile */
+    display: none;
+  }
+
+  .connectBar {
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 2%;
+    width: 96%;
+  }
+
+  .connectHeader {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .studentHeader {
+    font-size: 6vw;
+  }
+
+  .connecth1 {
+    font-size: 5vw; /* Adjust font size for mobile */
+    margin: 5% 0; /* Reduce spacing for mobile */
+  }
+
+  .connectOne {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .img,
+  .img2 {
+    height: 30vh; /* Adjust image height for mobile */
+    width: 80%; /* Full width for mobile */
+    margin-left: 10%;
+  }
+
+  .title {
+    font-size: 6vw; /* Adjust font size for mobile */
+    text-align: center;
+    width: 80%; /* Full width for mobile */
+    margin-left: 10%;
+  }
+
+  .description {
+    font-size: 3.5vw; /* Adjust font size for mobile */
+    width: 80%; /* Full width for mobile */
+    margin-top: -3%;
+    margin-left: 10%;
+  }
+
+  .filterLabel,
+  .filterInput,
+  .filterSelect,
+  .filterButton,
+  .filterResetButton {
+    font-size: 3vw; /* Adjust filter controls for mobile */
+  }
+
+  .next-slick-arrow,
+  .prev-slick-arrow {
+    display: none;
+  }
 }

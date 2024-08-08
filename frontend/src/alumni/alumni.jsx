@@ -68,7 +68,7 @@ function AlumniPage() {
                   <p>Batch of {data.batch}</p>
                   <p>{data.email}</p>
 
-                  <button className="editButton">Edit</button>
+                  {/* <button className="editButton">Edit</button> */}
                 </div>
               </div>
             ) : (

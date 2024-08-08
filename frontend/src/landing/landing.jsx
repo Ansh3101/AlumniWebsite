@@ -41,7 +41,7 @@ function LandingPage() {
             <p className="momentum">
               <i>
                 Building Bridges... <br></br>
-                <a href="" className="joinAlumni">
+                <a href="/alumni" className="joinAlumni">
                   Join the CIS Alumni Network
                 </a>
               </i>

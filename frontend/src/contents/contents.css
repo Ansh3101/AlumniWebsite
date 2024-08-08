@@ -8,54 +8,34 @@
   overflow: hidden;
 }
 
-.class-left {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  margin-top: 10%;
-  border: none;
-  height: 55vh;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 10px 10px 200px #989898;
-  border: 2px solid #000;
-  transition: 0.51s;
-}
-
-.class-right {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  margin-top: 10%;
-  border: none;
-  height: 55vh;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 10px 10px 200px #989898;
-  border: 2px solid #000;
-  transition: 1s;
-}
-
+.class-left,
+.class-right,
 .class {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
-  border: none;
   height: 55vh;
   background-position: center;
   background-size: cover;
   box-shadow: 10px 10px 200px #989898;
   border: 2px solid #000;
-  transition: 1s;
+  transition: 0.5s;
+}
+
+.class-left {
+  width: 15%;
+  margin-top: 10%;
+}
+
+.class-right {
+  width: 15%;
+  margin-top: 10%;
+}
+
+.class {
+  width: 60%;
+  margin: 10% 5%;
 }
 
 .hidden {
@@ -107,7 +87,7 @@
 }
 
 .classCaption {
-  margin-top: -5%;
+  margin-top: -7%;
   font-family: "EB Garamond";
   font-size: 1.1vw;
 }
@@ -118,11 +98,103 @@
   font-style: italic;
   text-decoration: none;
   transition: 0.5s;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
   color: #000;
   font-size: 0.9vw;
 }
 
 .explore:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .class-left,
+  .class-right {
+    display: none; /* Hide left and right images on mobile */
+  }
+
+  .class {
+    width: 90%;
+    height: 60vh; /* Adjust height for mobile */
+    margin: 5% 0;
+  }
+
+  .classNote {
+    position: absolute;
+    width: 100%;
+    margin-left: 15%;
+    padding: 1rem;
+    border-top: 10px solid #000;
+  }
+
+  .classText {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .classHeader {
+    font-size: 5vw;
+  }
+
+  .classSub {
+    font-size: 4vw;
+  }
+
+  .classCaption {
+    display: none; /* Hide the caption on mobile */
+  }
+
+  .explore {
+    font-size: 3vw;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .class {
+    width: 95%;
+    height: 70vh; /* Adjust height for smaller screens */
+    margin: 3% 0;
+  }
+
+  .classNote {
+    width: 80%;
+    top: -10%;
+    height: 15vh;
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: -10%; /* Added negative margin-bottom for overlap */
+  }
+
+  .classHeader {
+    font-size: 6vw;
+  }
+
+  .classSub {
+    font-size: 5vw;
+  }
+
+  .classCaption {
+    display: none; /* Hide the caption on smaller screens */
+  }
+
+  .explore {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .class:hover {
+    width: 95%;
+    height: 70vh; /* Adjust height for smaller screens */
+    margin: 3% 0;
+  }
 }

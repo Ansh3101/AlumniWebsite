@@ -22,7 +22,7 @@ function NetworkPage() {
             Limitless opportunities in thriving fields and <br></br>expanding
             frontiers.
           </p>
-          <a href="" className="learnMore">
+          <a href="/connect" className="learnMore">
             Learn More
           </a>
         </div>
@@ -33,7 +33,7 @@ function NetworkPage() {
             See your life and career as a team effort.
             <br></br>Learning does not end at graduation.
           </p>
-          <a href="" className="learnMore">
+          <a href="/connect" className="learnMore">
             Learn More
           </a>
         </div>

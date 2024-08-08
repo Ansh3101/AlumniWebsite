@@ -83,6 +83,17 @@ function ConnectPage() {
         <div className="prev-slick-arrow"> ⫷ </div>
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+        nextArrow: <div></div>,
+        prevArrow: <div></div>,
+      },
+    ],
   };
 
   const altSettings = {
@@ -99,6 +110,17 @@ function ConnectPage() {
         <div className="prev-slick-arrow"> ⫷ </div>
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+        nextArrow: <div></div>,
+        prevArrow: <div></div>,
+      },
+    ],
   };
 
   const [loggedIn, setLoggedIn] = useState(false);

@@ -63,7 +63,7 @@ function StudentPage() {
                   <p>{data.email}</p>
                   <p>{JSON.parse(data.countries).join(", ")}</p>
 
-                  <button className="editButton">Edit</button>
+                  {/* <button className="editButton">Edit</button> */}
                 </div>
               </div>
             ) : (

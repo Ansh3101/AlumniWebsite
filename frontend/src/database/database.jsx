@@ -12,7 +12,7 @@ function DatabasePage() {
           You are forever a part of this community.<br></br>
           <i>Help us stay in touch.</i>
         </p>
-        <a href="" className="joinNetwork">
+        <a href="/alumni" className="joinNetwork">
           Join The Network
         </a>
       </div>

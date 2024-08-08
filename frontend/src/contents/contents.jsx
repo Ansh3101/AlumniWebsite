@@ -28,7 +28,7 @@ function ContentsPage() {
               <i>The graduating batches of CIS over the years...</i>
             </p>
           </div>
-          <a href="" className="explore">
+          <a href="/class" className="explore">
             Explore More
           </a>
         </div>
